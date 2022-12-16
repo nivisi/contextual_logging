@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:contextual_logging/contextual_logging.dart';
 import 'package:intl/intl.dart';
-import 'package:logger/logger.dart';
 
 typedef _LogLevelLabelFunc = String Function(Level logLevel);
 
@@ -43,7 +42,7 @@ class ContextualLogPrinter extends LogPrinter {
     Object? forObject,
     DateFormat? timeFormat,
     this.timeInUtc = false,
-    this.printTime = false,
+    this.printTime = true,
     _LogLevelLabelFunc? logLevelLabel,
   })  : _prefix = _getPrefix(forObject),
         _timeFormat = timeFormat ?? _defaultTimeFormat,
@@ -116,7 +115,7 @@ class ContextualLogPrinter extends LogPrinter {
   }
 
   String _getNow() {
-    if (printTime) {
+    if (!printTime) {
       return '';
     }
 
