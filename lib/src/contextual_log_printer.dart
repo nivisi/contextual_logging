@@ -56,6 +56,10 @@ class ContextualLogPrinter extends LogPrinter {
       return forObject.logContext.isEmpty ? '' : '${forObject.logContext} : ';
     }
 
+    if (forObject is String) {
+      return forObject;
+    }
+
     return forObject == null ? '' : '${forObject.toString()} :';
   }
 
