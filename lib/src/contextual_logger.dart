@@ -4,19 +4,16 @@ import 'package:meta/meta.dart';
 
 typedef _GetLogger = Logger Function(dynamic forObject);
 
-/// Configuration of [LogWithContext].
+/// Configuration of [ContextualLogger].
 ///
-/// [defaultLogger] allows you to set the default logger used by [LogWithContext].
+/// [defaultLogger] allows you to set the default logger used by [ContextualLogger].
 /// If you want to define a global logger, do it on startup:
 ///
 /// ```dart
-/// LoggableConfig.defaultLogger = (forObject) => MyBeautifulLogger(forObject);
+/// ContextualLoggingConfig.defaultLogger = (forObject) => MyBeautifulLogger(forObject);
 /// ```
 ///
-/// This will make [LogWithContext] use that logger by default.
-///
-/// Also checkout the [loggable_contextualized](https://pub.dev/packages/loggable_contextualized) library
-/// that contains a set of contextualized logger outputs.
+/// This will make [ContextualLogger] use that logger by default.
 class ContextualLoggingConfig {
   const ContextualLoggingConfig._();
 
