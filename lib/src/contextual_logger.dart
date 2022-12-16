@@ -1,5 +1,4 @@
 import 'package:contextual_logging/contextual_logging.dart';
-import 'package:logger/logger.dart';
 import 'package:meta/meta.dart';
 
 typedef _GetLogger = Logger Function(dynamic forObject);
