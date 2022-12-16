@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Warning fix
+
 ## 1.0.1+1
 
 - Correct docs

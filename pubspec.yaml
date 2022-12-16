@@ -1,6 +1,6 @@
 name: contextual_logging
 description: A log mixin that uses logger package and allows to make messages contextual.
-version: 1.0.1+1
+version: 1.0.2
 homepage: https://github.com/nivisi/contextual_logging
 repository: https://github.com/nivisi/contextual_logging
 issue_tracker: https://github.com/nivisi/contextual_logging/issues
