@@ -209,5 +209,5 @@ ContextualLoggingConfig.defaultLogger = (forObject) {
 ```
 
 <!-- References -->
-[pub-version-img]: https://img.shields.io/badge/pub-v1.0.0-0175c2?logo=dart
+[pub-version-img]: https://img.shields.io/badge/pub-v1.0.1-0175c2?logo=dart
 [pub-version-url]: https://pub.dev/packages/contextual_logging
