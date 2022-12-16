@@ -1,3 +1,7 @@
+## 1.0.2+1
+
+- Readme fix
+
 ## 1.0.2
 
 - Warning fix
