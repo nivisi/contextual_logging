@@ -1,3 +1,7 @@
+## 1.0.1+1
+
+- Correct docs
+
 ## 1.0.1
 
 - Small corrections

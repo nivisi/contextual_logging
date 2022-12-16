@@ -26,8 +26,6 @@ Print messages like this w/o any effort.
     - [Example](#example)
     - [Log level label](#log-level-label)
 
----
-
 ## What's contextual logging?
 
 We all know log messages. They are printed to the console, to the files or whatever. Dart provides us with methods for logging like:
@@ -154,7 +152,7 @@ There are plenty of properties you can change:
 
 #### Example
 
-So imagine you've overriden the printer like this:
+So imagine you've overridden the printer like this:
 
 ```dart
 ContextualLoggingConfig.defaultLogger = (forObject) {
@@ -175,15 +173,15 @@ ContextualLoggingConfig.defaultLogger = (forObject) {
 
 Log level lebel is what allows you to distinguish the level of a message. The [`logger`](https://pub.dev/packages/logger) package allows you to use these levels:
 
-| Level   | Function                      | Default | Emoji |
-| :------ | :---------------------------- | :------ | :---- |
-| Verbose | `log.v`                       | [V]     |       |
-| Debug   | `log.d`                       | [D]     | 🐛    |
-| Info    | `log.i`                       | [I]     | 💡    |
-| Warning | `log.w`                       | [W]     | ⚠️    |
-| Error   | `log.e`                       | [E]     | ⛔️    |
-| Wtf     | `log.wtf`                     | [WTF]   | 🗿    |
-| Nothing | `log.log(Level.nothing, ...)` |         |       |
+| Level   | Function                      | Default | Emoji  |
+| :------ | :---------------------------- | :------ | :----  |
+| Verbose | `log.v`                       | [V]     | *None* |
+| Debug   | `log.d`                       | [D]     | 🐛     |
+| Info    | `log.i`                       | [I]     | 💡     |
+| Warning | `log.w`                       | [W]     | ⚠️     |
+| Error   | `log.e`                       | [E]     | ⛔️     |
+| Wtf     | `log.wtf`                     | [WTF]   | 🗿     |
+| Nothing | `log.log(Level.nothing, ...)` | *None*  | *None* |
 
 Override the `logLevelLabel` property to make your own prefixes!
 
@@ -209,5 +207,5 @@ ContextualLoggingConfig.defaultLogger = (forObject) {
 ```
 
 <!-- References -->
-[pub-version-img]: https://img.shields.io/badge/pub-v1.0.1-0175c2?logo=dart
+[pub-version-img]: https://img.shields.io/badge/pub-v1.0.1+1-0175c2?logo=dart
 [pub-version-url]: https://pub.dev/packages/contextual_logging
